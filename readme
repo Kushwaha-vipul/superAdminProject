@@ -1,0 +1,62 @@
+# Super Admin Dashboard
+
+## Project Overview
+This project implements a **Super Admin backend** along with a lightweight **React frontend** for testing.  
+The Super Admin can manage **users, roles, audit logs, and basic analytics**. It also allows testing feature toggles and role assignments.
+
+The goal is to deliver production-ready APIs, a minimal UI to exercise them, and documentation to easily run the project locally.
+
+---
+
+## Features
+- **User Management:** Create, read, update, delete users, view user details.
+- **Role Management:** Create roles, assign roles to users, update role permissions.
+- **Audit Logs:** Track all user and role operations.
+- **Analytics:** Basic summaries, like total users, active users (last 7 days), and total roles.
+- **Feature Toggles:** Minimal implementation to get/set feature settings.
+- **Authentication:** JWT-based login with Super Admin role verification.
+
+---
+
+## Tech Stack
+- **Backend:** Node.js, Express.js  
+- **Database:** PostgreSQL  
+- **ORM:** Sequelize  
+- **Frontend:** React 
+- **Authentication:** JWT  
+- **Testing:** Jest + Supertest  
+- **API Testing:** Postman collection provided  
+
+---
+
+
+
+## Frontend Overview
+- **Login Page:** Enter email/password, store JWT in memory.  
+- **Users List:** Table view with search, filters, pagination; actions: View, Edit, Delete, Assign Role.  
+- **User Detail Modal:** Show profile info, roles, activity summary.  
+- **Assign Role Modal:** Select role(s) and submit.  
+- **Audit Logs Page:** Filter by date/action.  
+- **Analytics Dashboard:** Cards for total users, active users, and roles.  
+
+**UI Expectations:** Clean layout, readable typography, form validation, and error displays.
+
+---
+
+## Setup Instructions
+
+
+npx sequelize db:migrate
+npx sequelize db:seed:all
+
+## Start backend server:
+cd backend
+npm run dev
+
+
+## Frontend setup:
+
+cd frontend
+npm install
+npm start
+

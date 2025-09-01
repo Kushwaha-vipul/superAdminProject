@@ -1,0 +1,92 @@
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2c3e50; 
+  padding: 12px 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ecf0f1; 
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo a {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ecf0f1;
+  text-decoration: none;
+  letter-spacing: 1.2px;
+  transition: color 0.3s ease;
+}
+
+.logo a:hover {
+  color: #3498db; 
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.links li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.links li a:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ecf0f1;
+}
+
+.logoutBtn {
+  background-color: #e74c3c; 
+  color: white;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logoutBtn:hover {
+  background-color: #c0392b;
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .user {
+    justify-content: center;
+    gap: 12px;
+  }
+}

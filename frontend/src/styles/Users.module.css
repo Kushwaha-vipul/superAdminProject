@@ -1,0 +1,60 @@
+
+.container {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 24px 32px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #2c3e50;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 8px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.table thead {
+  background-color: #3498db;
+  color: white;
+}
+
+.table th, .table td {
+  padding: 14px 20px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table tbody tr:hover {
+  background-color: #f1faff;
+  cursor: pointer;
+}
+
+.table th:first-child, .table td:first-child {
+  width: 8%;
+}
+
+.table th:nth-child(2), .table td:nth-child(2) {
+  width: 35%;
+}
+
+.table th:nth-child(3), .table td:nth-child(3) {
+  width: 25%;
+}
+
+.table th:last-child, .table td:last-child {
+  width: 32%;
+  white-space: nowrap;
+  color: #666;
+}
